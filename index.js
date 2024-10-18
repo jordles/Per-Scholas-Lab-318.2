@@ -27,13 +27,25 @@ app.engine("jordles", (filePath, options, callback) => {
 app.set("views", "./views"); // specify the views directory
 app.set("view engine", "jordles"); // register the template engine
 
-app.get("/template", (req, res) => {
+app.get("/index", (req, res) => {
   const options = {
-    title: "This is Jordles's template engine",
-    content:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis impedit aliquid illo. Magnam beatae, doloremque quis eum quidem itaque architecto laboriosam suscipit ab quas quo impedit provident? Aliquid optio, debitis dolor mollitia fuga earum eius? Mollitia eius fuga voluptates numquam.",
-    footer: "This is Jordles's footer",
+    title: 'Welcome to the Home Page',
+    content: 'This is the content of the Home page. You can navigate to the form page using the link above.',
+    footer: 'Home Page Footer'
   };
 
   res.render("index", options);
 });
+
+// Route for Form Page
+app.get("/form", (req, res) => {
+  const options = {
+    title: 'Welcome to the Form Page',
+    content: 'This is the content of the Form page. You can navigate to the home page using the link above.',
+    footer: 'Form Page Footer'
+  };
+
+  res.render("form", options);
+})
+
+//Route to handle form submission

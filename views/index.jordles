@@ -1,0 +1,14 @@
+<html>
+<head>
+  <title>{title}</title>
+</head>
+<body>
+  <nav>
+    <a href="/index">Home</a> |
+    <a href="/form">Form Page</a>
+  </nav>
+  <h1>Welcome to {title}</h1>
+  <div>{content}</div>
+  <footer>{footer}</footer>
+</body>
+</html>
