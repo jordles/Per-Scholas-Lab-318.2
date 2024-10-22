@@ -1,0 +1,21 @@
+<html>
+<head>
+  <title><%= title %></title>
+</head>
+<body>
+  <nav>
+    <a href="/index">Home</a> |
+    <a href="/form">Form Page</a>
+  </nav>
+  <h1><%= title %></h1>
+  <div><%= content %></div>
+
+  <% if (content.includes('Currently looking up')) { %>
+    <img src="/adrien-king.jpg" alt="Descriptive Alt Text" width ="300"/>
+    <br>
+    <a href="/download">Download Image</a>
+  <% } %>
+
+  <footer><%= footer %></footer>
+</body>
+</html>

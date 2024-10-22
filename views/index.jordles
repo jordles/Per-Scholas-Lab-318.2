@@ -7,7 +7,7 @@
     <a href="/index">Home</a> |
     <a href="/form">Form Page</a>
   </nav>
-  <h1>Welcome to {title}</h1>
+  <h1>{title}</h1>
   <div>{content}</div>
   <footer>{footer}</footer>
 </body>
