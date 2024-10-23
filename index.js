@@ -6,6 +6,7 @@ const app = express()
 const PORT = 3000;
 
 app.set("view engine", "ejs"); //using ejs as the template engine
+app.use(express.static('styles'));
 
 const morgan = require("morgan");
 // Third Party Request Logger
@@ -152,3 +153,4 @@ app.get("/download", (req, res) => {
   const file = `${__dirname}/images/adrien-king.jpg`;
   res.download(file);
 });
+
